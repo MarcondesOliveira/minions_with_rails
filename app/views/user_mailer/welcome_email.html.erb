@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Bem-vindo ao Minion.com, <%= @user.name %></h1>        
+
+    <p>Você reservou com sucesso o seu Minion. Seus dados são:</p>
+      <p>Email: <%= @user.email %></p>
+      <p>Telefone: <%= @user.phone %></p>
+      <p>Código do Minion: <%= @user.code_product %></p>
+      <p>Seu nome de usuário é: <%= @user.login %></p>    
+    <p>Obrigado pelo interesse. Em breve entraremos em contato.</p>
+  </body>
+</html>

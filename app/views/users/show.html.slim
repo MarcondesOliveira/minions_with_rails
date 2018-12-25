@@ -1,0 +1,26 @@
+p.text-center
+  strong#notice
+  = notice
+
+p.text-center
+  strong Name:
+  = @user.name
+p.text-center
+  strong Email:
+  = @user.email
+p.text-center
+  strong Phone:
+  = @user.phone
+p.text-center
+  strong Code product:
+  = @user.code_product
+p.text-center
+  strong Login:
+  = @user.login
+
+/ => link_to 'Edit', edit_user_path(@user)
+/ '|
+.text-center
+  =< link_to 'Voltar', welcome_index_path, class: 'btn btn-primary'
+
+  / <%= link_to "Reservar", new_user_path, class: 'btn btn-primary'%>

@@ -1,0 +1,34 @@
+.container.text-center
+  h1
+    | Minions
+  h2
+    | Escolha seu boneco Minion e reserve já
+  p
+    | Reservando seu Minion, você garante o melhor preço.
+  .row
+    .card.col-md-6[style="width: 25rem;"]
+      = image_tag("minion1.png", class: "img-responsive")
+      input#minion1.form-check-input[type="checkbox" value="option1"]
+      .card-body
+        h4.card-title
+          | Minion 1
+        p.card-text
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim sed mauris nec venenatis. Maecenas efficitur odio nec nisi suscipit, vel egestas lorem volutpat. Maecenas non sem at erat tempor luctus.
+    .card.col-md-6[style="width: 25rem;"]
+      = image_tag("minion2.png", class: "img-responsive")
+      input#minion2.form-check-input[type="checkbox" value="option1"]
+      .card-body
+        h4.card-title
+          | Minion 2
+        p.card-text
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim sed mauris nec venenatis. Maecenas efficitur odio nec nisi suscipit, vel egestas lorem volutpat. Maecenas non sem at erat tempor luctus.
+    .card.col-md-6[style="width: 25rem;"]
+      = image_tag("minion3.png", class: "img-responsive")
+      input#minion3.form-check-input[type="checkbox" value="option1"]
+      .card-body
+        h4.card-title
+          | Minion 3
+        p.card-text
+          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim sed mauris nec venenatis. Maecenas efficitur odio nec nisi suscipit, vel egestas lorem volutpat. Maecenas non sem at erat tempor luctus.
+  div
+    = link_to "Reservar", new_user_path, class: 'btn btn-primary'

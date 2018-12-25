@@ -1,0 +1,42 @@
+
+<div class="container text-center">
+    <h1>Minions</h1>
+
+    <h2>Escolha seu boneco Minion e reserve já</h2>
+    <p>Reservando seu Minion, você garante o melhor preço.</p>
+
+    <div class="row">
+        <div class="card col-md-6" style="width: 25rem;">
+            <%= image_tag("minion1.png", class: "img-responsive", id: "navbar-logo") %>
+            <input class="form-check-input" type="checkbox" id="minion1" value="option1">
+
+            <div class="card-body">
+                <h4 class="card-title">Minion 1</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim sed mauris nec venenatis. Maecenas efficitur odio nec nisi suscipit, vel egestas lorem volutpat. Maecenas non sem at erat tempor luctus.</p>                            
+            </div>
+        </div>
+
+        <div class="card col-md-6" style="width: 25rem;">
+            <%= image_tag("minion2.png", class: "img-responsive", id: "navbar-logo") %>
+            <input class="form-check-input" type="checkbox" id="minion2" value="option1">
+
+            <div class="card-body">
+                <h4 class="card-title">Minion 2</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim sed mauris nec venenatis. Maecenas efficitur odio nec nisi suscipit, vel egestas lorem volutpat. Maecenas non sem at erat tempor luctus.</p>                            
+            </div>
+        </div>
+
+        <div class="card col-md-6" style="width: 25rem;">
+            <%= image_tag("minion3.png", class: "img-responsive", id: "navbar-logo") %>
+            <input class="form-check-input" type="checkbox" id="minion3" value="option1">
+
+            <div class="card-body">
+                <h4 class="card-title">Minion 3</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim sed mauris nec venenatis. Maecenas efficitur odio nec nisi suscipit, vel egestas lorem volutpat. Maecenas non sem at erat tempor luctus.</p>                            
+            </div>
+        </div>
+    </div>
+    <div>
+        <%= link_to "Reservar", new_user_path, class: 'btn btn-primary'%>
+    </div>
+</div>

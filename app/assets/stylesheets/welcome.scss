@@ -1,0 +1,23 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+    background-color: #b7d2ff;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h4{
+    font-weight: bold;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
