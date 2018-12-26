@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body{
     background-color: #b7d2ff;
+    padding: 25px;
 }
 
 .container{
@@ -12,12 +13,34 @@ body{
 
 h1, h4{
     font-weight: bold;
+    font-family: 'Baloo', cursive;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px;
+    padding: 25px 50px;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 25px 0 25px;
+    background-color: #fff;
+    padding: 10px 25px 25px 25px;
+    border-radius: 5px;
+}
+
+.img-responsive{
+    width: 270px;
+    padding: 10px 0 10px 0;
+}
+
+.img-responsive:hover{
+    transform: scale(1.5,1.5);
+    transition: 2s ease-in-out;
 }
 

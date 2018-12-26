@@ -1,22 +1,28 @@
-p.text-center
-  strong#notice
-  = notice
-
-p.text-center
-  strong Name:
-  = @user.name
-p.text-center
-  strong Email:
-  = @user.email
-p.text-center
-  strong Phone:
-  = @user.phone
-p.text-center
-  strong Code product:
-  = @user.code_product
-p.text-center
-  strong Login:
-  = @user.login
+ul.list-group
+  li.list-group-item
+    p.text-center[style="font-weight: bold"]
+      strong#notice
+      = notice
+  li.list-group-item
+    p.text-center
+      strong Name:
+      = @user.name
+  li.list-group-item
+    p.text-center
+      strong Email:
+      = @user.email
+  li.list-group-item
+    p.text-center
+      strong Phone:
+      = @user.phone
+  li.list-group-item
+    p.text-center
+      strong Code product:
+      = @user.code_product
+  li.list-group-item
+    p.text-center
+      strong Login:
+      = @user.login
 
 / => link_to 'Edit', edit_user_path(@user)
 / '|
